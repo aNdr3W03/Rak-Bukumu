@@ -1,0 +1,343 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #282850;
+}
+
+body, input, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input, button {
+    font-size: 16px;
+    border: none;
+}
+
+.head_bar {
+    padding: 24px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #191937;
+    color: white;
+}
+
+.head_bar > h1 {
+    color : #8282E6;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #282850;
+    box-shadow:  16px  16px 32px #20203f,
+                -16px -16px 32px #303061;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: #8282E6;
+}
+
+.input_section > form > .input {
+    margin: 12px 0;
+}
+
+.input_section > form > button {
+    background-color: #8282E6;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 8px;
+    background-color: #464678;
+    color: white;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.input_section > form > .input > label {
+    color: #8282E6;
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: #8282E6;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.checkbox_switch {
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 28px;
+}
+
+.checkbox_switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider_round {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #464678;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider_round:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider_round {
+    background-color: #8282E6;
+}
+
+input:focus + .slider_round {
+    box-shadow: 0 0 1px #8282E6;
+}
+
+input:checked + .slider_round:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.search_section {
+    margin: 48px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #282850;
+    box-shadow:  16px  16px 32px #20203f,
+                -16px -16px 32px #303061;
+}
+
+.search_section > h2 {
+    color: #8282E6;
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 64px;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+    color: #8282E6;
+    font-weight: bold;
+}
+
+.search_section > form > input {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #464678;
+    color: white;
+}
+
+.search_section > form > button {
+    background-color: #8282E6;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf {
+    margin: 48px 0;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #282850;
+    box-shadow:  16px  16px 32px #20203f,
+                -16px -16px 32px #303061;
+}
+
+.book_shelf > h2 {
+    color: #8282E6;
+}
+
+.book_shelf > .book_list {
+    padding: 0 16px 16px 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border-radius: 5px;
+    margin-top: 18px;
+    background-color: #32325A;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action {
+    margin-top: 16px;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    width: 48px;
+    height: 38px;
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: #466E46;
+    color: #00F000;
+}
+
+.book_shelf > .book_list > .book_item > .action > .orange {
+    background-color: #6E6450;
+    color: #F0BE0A;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: #644646;
+    color: #E61E00;
+}
+
+.edit_section {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    border: none;
+    border-radius: 0;
+    display: none;
+    background-color: rgba(40, 40, 80, 0.5);
+    backdrop-filter: blur(2px);
+}
+
+.edit_section > form {
+    width: 450px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #282850;
+    box-shadow:  16px  16px 32px #20203f,
+                -16px -16px 32px #303061;
+}
+
+.edit_section > #editBook > h2 {
+    text-align: center;
+    color: #8282E6;
+}
+
+.edit_section > #editBook > button {
+    margin-top: 16px;
+}
+
+.edit_section > #editBook > .green {
+    background-color: #466E46;
+    color: #00F000;
+}
+
+.edit_section > #editBook > .red {
+    background-color: #644646;
+    color: #E61E00;
+}
+
+.swal-title {
+    color : #8282E6;
+    font-weight: bold;
+}
+
+.swal-button {
+    background-color: #8282E6;
+    color: white;
+}
+
+.swal-button--danger {
+    background-color: red;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #191937;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #8282E6;
+}
