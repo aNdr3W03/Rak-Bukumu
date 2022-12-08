@@ -17,6 +17,10 @@ input, button {
     border: none;
 }
 
+input:focus-visible {
+    outline: none;
+}
+
 .head_bar {
     padding: 24px;
     margin-bottom: 32px;
