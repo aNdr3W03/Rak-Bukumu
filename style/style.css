@@ -17,7 +17,7 @@ input, button {
     border: none;
 }
 
-input:focus-visible {
+input:focus-visible, button:focus-visible {
     outline: none;
 }
 
