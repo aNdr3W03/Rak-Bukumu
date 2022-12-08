@@ -1,3 +1,5 @@
+const currentYear = new Date().getFullYear();
+
 const books = [];
 const RENDER_EVENT = 'render-book';
 const STORAGE_KEY  = 'BOOKS_APPS';
