@@ -67,6 +67,11 @@ main {
     width: 100%;
     padding: 8px;
     cursor: pointer;
+    transition: .2s;
+}
+
+.input_section > form > button:hover {
+    opacity: .7;
 }
 
 .input_section > form > button > span {
@@ -135,6 +140,10 @@ input[type=number] {
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 34px;
+}
+
+.slider_round:hover {
+    opacity: .7;
 }
 
 .slider_round:before {
@@ -208,6 +217,11 @@ input:checked + .slider_round:before {
     border: 0;
     border-radius: 5px;
     cursor: pointer;
+    transition: .2s;
+}
+
+.search_section > form > button:hover {
+    opacity: .7;
 }
 
 .book_shelf {
@@ -336,6 +350,7 @@ a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    transition: .2s;
 }
 
 a:hover {
